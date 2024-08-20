@@ -347,8 +347,9 @@ h1 {
 
 .clear-x {
   position: absolute;
-  top: 0;
+  top: 50%;
   right: 5px;
+  transform: translateY(-50%);
   font-size: 32px;
   color: #212121;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
