@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Z-Table Distribution</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" id="link" />
+  </head>
+  <body>
+    <div class="setting">
+      <img src="./img/setting.svg" alt="image-setting" />
+    </div>
+    <div class="blur">
+      <div class="mess"></div>
+    </div>
+    <div class="setting-con">
+      <div class="set-wrap">
+        <div class="color-con">
+          <p>Change Theme:</p>
+          <div class="color-wrap">
+            <div class="col">
+              <div class="col-lin"></div>
+              <div class="col-col"></div>
+            </div>
+            <div class="col">
+              <div class="col-lin2"></div>
+              <div class="col-col2"></div>
+            </div>
+            <div class="col">
+              <div class="col-lin3"></div>
+              <div class="col-col3"></div>
+            </div>
+            <div class="col">
+              <div class="col-lin4"></div>
+              <div class="col-col4"></div>
+            </div>
+          </div>
+        </div>
+        <div class="active-con">
+          <div class="active-t">
+            <p>Active Theme</p>
+            <div class="col-a">
+              <div class="col-a-lin"></div>
+              <div class="col-a-col"></div>
+            </div>
+          </div>
+        </div>
+        <div class="show-ta">
+          <label for="oneInput"> One Input Mode</label>
+          <div class="toggle-switch">
+            <input type="checkbox" id="oneInput" />
+            <label for="oneInput"></label>
+          </div>
+        </div>
+        <div class="show-ta">
+          <label for="show-table"> Show Z-Table</label>
+          <div class="toggle-switch">
+            <input type="checkbox" id="show-table" />
+            <label for="show-table"></label>
+          </div>
+        </div>
+        <a href="./z_table_v1.0.apk">
+          <div class="show-ta">
+            <p>Download App</p>
+            <img src="./img/logo.png" width="26" height="26" alt="" />
+          </div>
+        </a>
+        <div class="version">App version: v1.0</div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="container">
+        <h1>Z-Table Distribution</h1>
+        <div class="input-fields">
+          <div class="label">
+            <label for="rowInput">Row&nbsp; 0.0 to 3.9:</label>
+          </div>
+          <div class="input1">
+            <input
+              type="number"
+              id="rowInput"
+              step="0.1"
+              min="0"
+              max="3.9"
+              placeholder="0.0"
+            />
+            <span class="clear-x">&times;</span>
+          </div>
+          <div class="label">
+            <label for="colInput">Col&nbsp; 0.00 to 0.09:</label>
+          </div>
+          <div class="input2">
+            <input
+              type="number"
+              id="colInput"
+              step="0.01"
+              min="0"
+              max="0.09"
+              placeholder="0.00"
+            />
+            <span class="clear-x">&times;</span>
+          </div>
+        </div>
+        <div class="buttons">
+          <button id="findValue">Find Z-Value</button>
+          <button id="clearValue">Clear-Value</button>
+        </div>
+        <div class="result"></div>
+      </div>
+      <div class="container">
+        <h1>Z-Table Distribution</h1>
+        <div class="input-fields">
+          <div class="label">
+            <label for="rowInput">Row 0.0 to 3.9 and Col 0.00 to 0.09:</label>
+          </div>
+          <div class="i-b">
+            <div class="input">
+              <input
+                type="text"
+                id="input"
+                step="0.1"
+                min="0"
+                max="3.9"
+                placeholder="Enter Row and Column"
+                autocomplete="off"
+              />
+              <span class="clear-x">&times;</span>
+            </div>
+            <button id="button">Find</button>
+          </div>
+        </div>
+        <div class="result2" hidden></div>
+      </div>
+      <div class="table-con">
+        <p class="z-head">Z-Table</p>
+        <table>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

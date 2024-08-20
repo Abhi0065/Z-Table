@@ -1,0 +1,65 @@
+body {
+  background: linear-gradient(300deg, #9400d3, #ff1493);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.toggle-switch input:checked + label {
+  background-color: #ff1493;
+}
+
+input {
+  outline-color: #ff1493;
+}
+
+button {
+  background-color: #ff1493;
+}
+
+button:hover {
+  background-color: #d10873;
+}
+
+tr:nth-child(1) {
+  background-color: #ff1493;
+}
+
+tr th:nth-child(1) {
+  background-color: #ff1493;
+}
+
+tbody::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+tbody::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+}
+
+tbody::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+tbody::-webkit-scrollbar-thumb {
+  background-color: #ff1493;
+}
+
+.highlight {
+  background-color: #ff1493;
+  animation: blink 1.6s 1s linear;
+}
+
+@keyframes blink {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #0072f5;
+  }
+  100% {
+    background-color: transparent;
+  }
+}

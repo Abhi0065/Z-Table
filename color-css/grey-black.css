@@ -1,0 +1,72 @@
+body {
+  background: linear-gradient(300deg, #bbbbbb, #212121);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+input {
+  outline-color: #212121;
+}
+
+.toggle-switch input:checked + label {
+  background-color: #212121;
+}
+
+button {
+  background-color: #212121;
+}
+
+button:hover {
+  background-color: #494949;
+}
+
+tr:nth-child(1) {
+  background-color: #212121;
+}
+
+tr th:nth-child(1) {
+  background-color: #212121;
+}
+
+.match-up {
+  background-color: rgba(185, 185, 185, 0.3);
+}
+
+.match-dn {
+  background-color: rgba(185, 185, 185, 0.3);
+}
+
+tbody::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+tbody::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+}
+
+tbody::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+tbody::-webkit-scrollbar-thumb {
+  background-color: #212121;
+}
+
+.highlight {
+  background-color: #212121;
+  animation: blink 1.6s 1s linear;
+}
+
+@keyframes blink {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #f50000;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
